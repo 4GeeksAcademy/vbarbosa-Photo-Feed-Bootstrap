@@ -32,29 +32,33 @@
                 </button>
                 
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav ms-auto d-flex">
+                  <ul class="navbar-nav ms-auto">
 
-                    <li class="nav-item m-1">
-                      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
-                          Create a new post
-                      </button>
-                    </li>
-                    <li class="nav-item dropdown m-1">
+                    <div style="display: flex; justify-content: end;">
 
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-secondary"><i class="fa-solid fa-gear fa-lg-lg"></i></button>
-                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
-                          <span class="visually-hidden"></span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                      <div>
+                        <li class="nav-item m-1 d-flex">
+                          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                              Create a new post
+                          </button>
+                        </li>
+                      </div>
+
+                      <li class="nav-item dropdown m-1">
+                      
+                        <a class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                          <i class="fa-solid fa-gear fa-lg-lg"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuClickableOutside">
                           <li><a class="dropdown-item" href="#">Profile</a></li>
                           <li><a class="dropdown-item" href="#">Accesibility</a></li>
                           <li><a class="dropdown-item" href="#">Privacy and data</a></li>
                           <li><hr class="dropdown-divider"></li>
                           <li><a class="dropdown-item" href="#" style="color: red;">Log out</a></li>
                         </ul>
-                      </div>
-                    </li>
+                      </li>
+                        
+                    </div>
 
                   </ul>
                 </div>
